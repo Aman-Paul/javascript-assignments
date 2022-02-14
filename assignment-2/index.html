@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignement-2</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+<body>
+    
+    <section class="user-form">
+        <form action="#" class="form">
+            <caption><h1>Registration form</h1></caption>
+
+            <label for="fname">Enter first Name:  
+                <input type="text" name="fname" id="fname" required="true" placeholder="First Name">
+            </label>
+            <label for="lname">Enter Last Name:  
+                <input type="text" name="lname" id="lname" required="true" placeholder="Last Name">
+            </label>
+            <label for="email">Enter Email Id: 
+                <div class="email">
+                    <input type="email" name="email" id="email" required="true" placeholder="Email">
+                    <span class="error" aria-live="polite"></span>
+                </div> 
+            </label>
+            <label for="id">Enter User Id:  
+                <input type="text" name="id" id="id" required placeholder="User Id" >
+            </label>
+            <label for="password">Enter Password:  
+                <input type="password" name="password" id="password" required="true" placeholder="password">
+            </label>
+            <label for="conPassword">Confirm Password:  
+
+                <div class="confirmation">
+                    <input type="password" name="conPassword" id="conPassword" required="true" placeholder="confirm password">
+                    <span class="passError" aria-live="polite"></span>
+                </div>
+
+            </label>
+
+            <button type="submit" class="submit">Submit</button>
+        </form>
+    </section>
+
+</body>
+</html>

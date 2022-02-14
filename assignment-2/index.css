@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(img/background.jpg);
+    background-size: cover;
+}
+
+.user-form{
+    height: 500px;
+    width: 600px;
+    border: 1px solid grey;
+    background-color: rgba(25, 157, 218, 0.267);
+    border-radius: 20px;
+    box-shadow: 3px 2px 5px grey;
+
+}
+
+.user-form > .form{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.form > label{
+    flex: 0.14;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-size: 1.5rem;
+}
+
+label > input{
+    height: 60%;
+    width: 50%;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 1px soild skyblue;
+    text-indent: 10px;
+}
+
+.form > button {
+    width: 100px;
+    height: 40px;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+}
+
+input[type=email]{
+  -webkit-appearance: none;
+  appearance: none;
+  height: 100%;
+  border: 1px solid #333;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 94%;
+
+  box-sizing: border-box;
+   border-radius: 10px;
+    border: 1px soild skyblue;
+    text-indent: 10px;
+}
+
+/* This is our style for the invalid fields */
+/* input:invalid{
+  border-color: #900;
+  background-color: #FDD;
+} */
+
+input:focus:invalid {
+  outline: none;
+}
+
+/* This is the style of our error messages */
+.error {
+  width  : 100%;
+  padding: 0;
+
+  font-size: 70%;
+  color: white;
+  background-color: #900;
+  border-radius: 0 0 5px 5px;
+
+  box-sizing: border-box;
+}
+
+.error.active {
+  padding: 0.3em;
+}
+
+.confirmation{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirmation > input{
+    width: 100%;
+    flex: 0.7;
+    font-size: 1rem;
+     border-radius: 10px;
+    border: 1px soild skyblue;
+    text-indent: 10px;
+}
+
+.passError{
+    width: 100%;
+    font-size: 94%;
+    color: red;
+}
+
+.submit{
+    background-color: rgba(1, 121, 121, 0.342);
+    border-radius: 10px;
+    border: 1px solid rgb(2, 137, 190);
+    box-shadow: 2px 3px 5px grey;
+}
+
+.submit:hover{
+    background-color: blue;
+    color: white;
+    transition: 2s;
+
+}
