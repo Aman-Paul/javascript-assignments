@@ -80,6 +80,7 @@ const array = csv.split(";");
 const convertedArray = [];
 
 for (let x of array) {
+  x = x.replaceAll(",", "");
   convertedArray.push(Object.assign({}, x));
 }
 
